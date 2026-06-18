@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+
+.env
+
+weather_pipeline.log
+weather-pipeline.log
+
+daily_report.txt
+daily_report

@@ -1,9 +1,12 @@
 import requests
 import pandas as pd
 from datetime import datetime
+import os
+from dotenv import load_dotenv
 
 # ── CONFIG ──────────────────────────────────────────
-API_KEY = "208efd924e90d03e05ae5af9848a8f4f"  # paste your key here
+load_dotenv()
+API_KEY = os.getenv("API_KEY")
 CITIES = ["Pune", "Mumbai", "Delhi", "Bangalore", "Chennai"]
 BASE_URL = "http://api.openweathermap.org/data/2.5/forecast"
 

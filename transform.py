@@ -13,10 +13,10 @@ def transform(df):
     df.drop_duplicates(subset=['city', 'datetime'], inplace=True)
 
     # 3. Handle nulls
-    df['temp'].fillna(df['temp'].mean() )
-    df['humidity'].fillna(df['humidity'].median() )
-    df['wind_speed'].fillna(0 )
-    df['condition'].fillna('Unknown')
+    df['temp'] = df['temp'].fillna(df['temp'].mean())
+    df['humidity'] = df['humidity'].fillna(df['humidity'].median())
+    df['wind_speed'] = df['wind_speed'].fillna(0)
+    df['condition'] = df['condition'].fillna('Unknown')
 
     # 4. Feature engineering
     df['date']       = df['datetime'].dt.date

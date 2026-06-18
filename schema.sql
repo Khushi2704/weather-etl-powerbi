@@ -1,4 +1,4 @@
-CREATE DATABASE weather_analytics;
+
 
 USE weather_analytics;
 
